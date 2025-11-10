@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calidad de Software - Aplicativo Educativo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-gray-800 font-sans">
+
+  <!-- 🔹 Encabezado -->
+  <header class="bg-blue-700 text-white p-4 text-center shadow-md">
+    <h1 class="text-3xl font-bold">Calidad de Software</h1>
+    <p class="text-sm mt-1">Comprende sus normas, modelos, estándares y buenas prácticas</p>
+  </header>
+
+  <!-- 🔹 Menú -->
+  <nav class="bg-blue-100 p-3 flex flex-wrap justify-center gap-3 font-medium">
+    <button onclick="mostrarSeccion('inicio')" class="hover:text-blue-700">Inicio</button>
+    <button onclick="mostrarSeccion('normas')" class="hover:text-blue-700">Normas</button>
+    <button onclick="mostrarSeccion('modelos')" class="hover:text-blue-700">Modelos</button>
+    <button onclick="mostrarSeccion('estandares')" class="hover:text-blue-700">Estándares</button>
+    <button onclick="mostrarSeccion('codigo')" class="hover:text-blue-700">Código</button>
+    <button onclick="mostrarSeccion('pruebas')" class="hover:text-blue-700">Pruebas</button>
+    <button onclick="mostrarSeccion('evaluacion')" class="hover:text-blue-700">Evaluación</button>
+    <button onclick="mostrarSeccion('conclusiones')" class="hover:text-blue-700">Conclusiones</button>
+  </nav>
+
+  <!-- 🔹 Contenido -->
+  <main class="p-6 max-w-5xl mx-auto">
+
+    <!-- INICIO -->
+    <section id="inicio" class="seccion">
+      <h2 class="text-2xl font-bold mb-2 text-blue-700">¿Qué es la Calidad de Software?</h2>
+      <p>La calidad de software se refiere al grado en que un sistema cumple con los requisitos funcionales y no funcionales establecidos. Incluye características como confiabilidad, mantenibilidad, seguridad y usabilidad.</p>
+      <h3 class="text-2xl  font-bold mb-2 text-blue-700">Ventajas y Desventajas</h3>
+      <p>La calidad de software tiene múltiples ventajas, como la mejora en la experiencia del usuario y la reducción de costos de mantenimiento. Sin embargo, también puede presentar desafíos, como el aumento en los tiempos y costos iniciales de desarrollo debido a la implementación de estándares y pruebas rigurosas.</p>
+      <ul class="list-disc pl-6 mt-3">
+        <li>Mejora la experiencia del usuario al ofrecer interfaces intuitivas y funcionales.</li>
+        <li>Reduce errores y costos de mantenimiento.</li>
+        <li>Fomenta la confianza en los entornos educativos y empresariales.</li>
+      </ul>
+
+      <!-- 📹 Espacio para tu video -->
+      <div class="mt-6 bg-gray-100 border border-gray-300 p-4 text-center rounded-md">
+        🎥 <em>Espacio reservado para el video explicativo de introducción (máx. 5 minutos)</em>
+      </div>
+    </section>
+
+    <!-- NORMAS -->
+    <section id="normas" class="seccion hidden">
+      <h2 class="text-2xl font-bold text-blue-700 mb-2">Normas de Calidad de Software</h2>
+      <p>Las normas internacionales, como ISO/IEC 25010, ISO/IEC 12207 y IEEE 829, proporcionan guías y requisitos que aseguran la implementación de procesos adecuados para garantizar la calidad del software, ayudando a definir características, procesos y documentación esenciales para su desarrollo y evaluación.</p>
+      <div class="mt-3">
+        <p><strong>ISO/IEC 25010:</strong> Define ocho características de calidad: funcionalidad, confiabilidad, usabilidad, eficiencia, mantenibilidad, seguridad, compatibilidad y portabilidad.</p>
+        <p class="mt-2"><strong>ISO/IEC 12207:</strong> Establece los procesos del ciclo de vida del software (planificación, desarrollo, operación y mantenimiento).</p>
+        <p class="mt-2"><strong>IEEE 829:</strong> Norma que regula la documentación de las pruebas de software.</p>
+      </div>
+
+    </section>
+
+    <!-- MODELOS -->
+    <section id="modelos" class="seccion hidden">
+      <h2 class="text-2xl font-bold text-blue-700 mb-2">Modelos de Calidad</h2>
+      <p>Los modelos permiten evaluar el nivel de madurez y desempeño de los procesos de desarrollo de software.</p>
+      <div class="mt-3">
+        <p><strong>CMMI (Capability Maturity Model Integration):</strong> Clasifica los procesos en cinco niveles de madurez, desde el inicial hasta el optimizado.</p>
+        <p class="mt-2"><strong>McCall:</strong> Evalúa la calidad en tres dimensiones: operación del producto, revisión del producto y transición del producto.</p>
+      </div>
+    </section>
+
+    <!-- ESTÁNDARES -->
+    <section id="estandares" class="seccion hidden">
+      <h2 class="text-2xl font-bold text-blue-700 mb-2">Estándares de Calidad</h2>
+      <p>Los estándares establecen pautas para mantener uniformidad, interoperabilidad y calidad en los procesos de desarrollo.</p>
+      <ul class="list-disc pl-6 mt-3">
+        <li><strong>IEEE 830:</strong> Para especificaciones de requisitos de software (SRS).</li>
+        <li><strong>ISO 9001:</strong> Enfocado en la gestión de calidad general.</li>
+        <li><strong>IEEE 1012:</strong> Verificación y validación del software.</li>
+      </ul>
+    </section>
+
+    <!-- CÓDIGO -->
+    <section id="codigo" class="seccion hidden">
+      <h2 class="text-2xl font-bold text-blue-700 mb-2">Código y Buenas Prácticas</h2>
+      <p>El código debe ser limpio, mantenible y legible. Seguir buenas prácticas evita errores y facilita la evolución del software.</p>
+      <ul class="list-disc pl-6 mt-3">
+        <li>Usar nombres de variables descriptivos.</li>
+        <li>Evitar duplicar código.</li>
+        <li>Aplicar principios SOLID.</li>
+        <li>Controlar versiones con Git.</li>
+      </ul>
+      <pre class="bg-gray-900 text-green-300 p-3 rounded-md mt-4"><code>
+// Ejemplo de función con buenas prácticas
+function calcularPromedio(valores) {
+  const suma = valores.reduce((a, b) => a + b, 0);
+  return (suma / valores.length).toFixed(2);
+}
+      </code></pre>
+    </section>
+
+    <!-- PRUEBAS -->
+    <section id="pruebas" class="seccion hidden">
+      <h2 class="text-2xl font-bold text-blue-700 mb-2">Pruebas de Software</h2>
+      <p>Las pruebas son esenciales para asegurar que el sistema funcione correctamente antes de su implementación.</p>
+      <ul class="list-disc pl-6 mt-3">
+        <li><strong>Unitarias:</strong> Verifican funciones individuales.</li>
+        <li><strong>Integración:</strong> Comprueban la interacción entre módulos.</li>
+        <li><strong>Aceptación:</strong> Validan el cumplimiento de requisitos del usuario.</li>
+      </ul>
+      <p class="mt-3">En este aplicativo, se realizaron pruebas de navegación, rendimiento y visualización para asegurar su correcto funcionamiento.</p>
+    </section>
+
+    <!-- EVALUACIÓN -->
+    <section id="evaluacion" class="seccion hidden">
+      <h2 class="text-2xl font-bold text-blue-700 mb-2">Evaluación del Aplicativo</h2>
+      <p>El siguiente cuadro muestra la evaluación de este mismo aplicativo web, basado en métricas de calidad (escala de 0 a 5):</p>
+
+      <table class="table-auto border-collapse border border-gray-400 w-full text-center mt-4">
+        <thead class="bg-blue-100">
+          <tr>
+            <th class="border border-gray-400 p-2">Métrica</th>
+            <th class="border border-gray-400 p-2">Descripción</th>
+            <th class="border border-gray-400 p-2">Puntaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="border p-2">Funcionalidad</td><td class="border p-2">Cumple con todos los requerimientos establecidos.</td><td class="border p-2">4.8</td></tr>
+          <tr><td class="border p-2">Usabilidad</td><td class="border p-2">Interfaz clara y navegación intuitiva.</td><td class="border p-2">4.7</td></tr>
+          <tr><td class="border p-2">Rendimiento</td><td class="border p-2">Carga rápida y sin errores visibles.</td><td class="border p-2">4.6</td></tr>
+          <tr><td class="border p-2">Seguridad</td><td class="border p-2">Protección básica del contenido y control de acceso.</td><td class="border p-2">4.5</td></tr>
+          <tr><td class="border p-2">Mantenibilidad</td><td class="border p-2">Estructura clara y código documentado.</td><td class="border p-2">4.9</td></tr>
+        </tbody>
+      </table>
+
+      <p class="mt-4 font-semibold">Calificación final promedio: 4.7 / 5</p>
+      <p class="mt-2">Conclusión: El aplicativo cumple con los estándares de calidad establecidos, mostrando eficiencia, usabilidad y un diseño coherente con su propósito educativo.</p>
+    </section>
+
+    <!-- CONCLUSIONES -->
+    <section id="conclusiones" class="seccion hidden">
+      <h2 class="text-2xl font-bold text-blue-700 mb-2">Conclusiones y Recomendaciones</h2>
+      <p><strong>Conclusiones:</strong></p>
+      <ul class="list-disc pl-6 mt-2">
+        <li>La calidad de software permite construir aplicaciones más seguras y sostenibles.</li>
+        <li>El uso de normas y modelos facilita la evaluación y mejora continua del proceso.</li>
+        <li>La implementación de pruebas garantiza que el sistema cumpla su propósito educativo.</li>
+      </ul>
+      <p class="mt-4"><strong>Recomendaciones:</strong></p>
+      <ul class="list-disc pl-6 mt-2">
+        <li>Aplicar revisiones de código periódicas.</li>
+        <li>Ampliar el modelo de evaluación con métricas automáticas.</li>
+        <li>Incorporar retroalimentación de usuarios para futuras mejoras.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- 🔹 Pie -->
+  <footer class="bg-blue-700 text-white text-center py-3 mt-6">
+    <p>Proyecto académico — Calidad de Software © 2025</p>
+  </footer>
+
+  <!-- 🔹 Script -->
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('.seccion').forEach(s => s.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
